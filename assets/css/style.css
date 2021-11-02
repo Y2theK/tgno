@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 30px;
@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  /* height: 3000px; */
   margin: 0;
   box-sizing: border-box;
   font-family: Poppins, "Fira Sans", sans-serif;
@@ -50,7 +49,7 @@ nav .brand-container {
   justify-content: center;
 }
 .brand-container .brand-name {
-  font-size: 33px;
+  font-size: 2rem;
   font-family: "Fira Sans", Poppins, sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
@@ -69,7 +68,7 @@ nav ul li {
   padding: 10px;
 }
 nav ul li a {
-  font-size: 22px;
+  font-size: 1.3rem;
   font-family: Poppins, sans-serif;
   font-weight: 500;
   color: var(--text-color);
@@ -97,12 +96,13 @@ nav #click {
 /* home section */
 
 .home {
-  background-image: url("../img/bg.jpg");
+  background-color: var(--main-color);
   width: 100%;
-  height: 95vh;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
+  /* align-items: center; */
 }
 .home div,
 .about div,
@@ -116,9 +116,10 @@ nav #click {
 }
 
 .home div.home-img img {
-  width: 500px;
-  height: 650px;
-  margin-top: 120px;
+  width: 350px;
+  height: 500px;
+  margin-top: 70px;
+  margin-right: 50px;
   border-bottom: 3px solid var(--text-color);
 }
 .home div.home-text {
@@ -127,24 +128,25 @@ nav #click {
   flex-direction: column;
 }
 .home div.home-text h1 {
-  font-size: 64px;
+  font-size: 54px;
   font-family: Poppins, sans-serif;
   font-weight: 550;
   letter-spacing: 2px;
   color: var(--text-color);
+  padding-left: 9px;
 }
 .home div.home-text p {
   color: var(--text-color);
   font-family: Poppins, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   letter-spacing: 1.5px;
 
-  margin: 20px 0px;
+  margin: 20px 15px;
 }
 .home .social-media .icon {
-  margin: 10px 40px;
-  font-size: 36px;
+  margin: 20px 28px 0px;
+  font-size: 30px;
   color: var(--sec-color);
 }
 .home .social-media .icon:hover {
@@ -153,34 +155,24 @@ nav #click {
 
 /* common */
 .section-title {
-  font-size: 60px;
+  font-size: 54px;
   font-family: Poppins, sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 /* about */
 .about {
   display: flex;
   background-color: var(--sec-color);
   justify-content: center;
-  padding: 150px 0px;
+  padding: 100px 0px;
 }
-/* .about div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-} */
 .about .about-text {
   width: 450px;
   height: 450px;
   margin-right: 40px;
 }
 .about .section-title {
-  /* font-size: 60px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px; */
   color: var(--main-color);
 
   padding-bottom: 10px;
@@ -193,7 +185,7 @@ nav #click {
   line-height: 170%;
   color: var(--main-color);
   text-align: justify;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 
   margin-top: 30px;
 }
@@ -203,29 +195,21 @@ nav #click {
   height: 430px;
   margin-top: 100px;
   margin-left: 100px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 50px;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  border-radius: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 /* .services */
 .services {
-  background-image: url("../img/bg.jpg");
-
+  background-color: var(--main-color);
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 100px 0px;
 }
-/* .services div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-} */
+
 .services .section-title {
-  /* font-size: 60px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px; */
   color: var(--text-color);
   padding-bottom: 10px;
   margin-bottom: 50px;
@@ -280,21 +264,12 @@ nav #click {
   padding: 100px 0px;
 }
 .whyme .section-title {
-  /* font-size: 60px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px; */
   color: var(--sec-color);
   padding-bottom: 10px;
   margin-bottom: 50px;
   border-bottom: 5px solid var(--text-color);
 }
-/* .whyme .skill-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-} */
+
 .whyme .skill-group .skill-card {
   height: 300px;
   width: 200px;
@@ -331,18 +306,8 @@ nav #click {
   background-color: var(--sec-color);
   padding: 110px 0px;
 }
-/* .contact div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-} */
-.contact .section-title {
-  /* font-size: 60px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px; */
 
+.contact .section-title {
   color: var(--main-color);
 
   padding-bottom: 10px;
@@ -381,8 +346,7 @@ nav #click {
 }
 /* footer */
 footer {
-  background-image: url("../img/bg.jpg");
-  background-repeat: repeat-x;
+  background-color: var(--main-color);
   padding-top: 30px;
 }
 footer div.footer-group {
@@ -430,4 +394,5 @@ footer p {
   font-weight: 500;
   text-align: center;
   letter-spacing: 3px;
+  margin-bottom: 10px;
 }
